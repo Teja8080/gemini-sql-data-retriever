@@ -1,10 +1,7 @@
 import streamlit as st
 import sqlite3
 from google  import genai
-from dotenv import load_dotenv
-import os
-load_dotenv()
-API_KEY = os.getenv('gemini_api_key')
+API_KEY = st.secrets['gemini_api_key']
 
 #provide the API key to the client
 
